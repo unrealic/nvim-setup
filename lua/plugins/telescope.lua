@@ -1,7 +1,7 @@
 return {
   "nvim-telescope/telescope.nvim",
-  tag = "0.1.6", -- you had this in your lazy.lua
-  dependencies = { "nvim-lua/plenary.nvim" },
+  tag = "v0.1.9",
+  dependencies = { "nvim-lua/plenary.nvim", "BurntSushi/ripgrep", { "nvim-telescope/telescope-fzf-native.nvim", build = "make" } },
   config = function()
     local builtin = require("telescope.builtin")
 
