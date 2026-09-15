@@ -127,18 +127,4 @@ vim.keymap.set("n", "<leader>tt", "<cmd>TransparentToggle<cr>", { desc = "Toggle
 
 
 
--- Temp
---vim.filetype.add({
---    pattern = { [".*/hypr/.*%.conf"] = "hyprlang" }
---})
-vim.filetype.add({
-  extension = {
-    asm = 'nasm',
-    --s = 'nasm',
-  },
-})
-vim.opt.runtimepath:append("/home/unreal/.local/share/nvim/site")
-
-
--- temp delete after it is introduced eventually, it seems to be nice tho
 require('vim._core.ui2').enable()
